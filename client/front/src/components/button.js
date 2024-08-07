@@ -36,6 +36,8 @@ class Button extends HTMLElement {
           // Prepare the payload
           const payload = { latitud, longitud }
 
+          console.log(payload)
+
           // Send the data to your API
           response = await fetch(`${import.meta.env.VITE_API_URL}/api/front/solicitud`, {
             method: 'POST',
